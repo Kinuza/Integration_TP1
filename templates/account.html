@@ -1,0 +1,40 @@
+{% extends 'page_maitre.html' %} 
+
+{% block titre %} Create an account {% endblock %}
+{% block main %} 
+<div id="container">
+<form action="post" >
+    <fieldset>
+        <legend>
+            CREATE AN ACCOUNT
+        </legend>
+        <label for="firstname">First Name</label>
+        <input type="text" placeholder="First Name">
+        <label for="lastname">Last Name</label>
+        <input type="text" placeholder="Last Name">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email" id="email" required>
+        <label for="adress">Adress</label>
+        <input type="text" placeholder="Adress">
+        <label for="country">Country</label>
+        <select id="Country">
+            <optgroup label="Americas">
+                <option value="n_am">North America</option>
+                <option value="c_am">Central America</option>
+                <option value="s_am">South America</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="Germany">Germany</option>
+                <option value="">United Kingdom</option>
+                <option value="">France</option>
+            </optgroup>
+            </select>
+            <label for="phone">Phone Number</label>
+        <input type="text" placeholder="Phone number">
+        <label for="inst">Delivery instructions</label>
+        <textarea placeholder="Delivery instructions"></textarea>
+        <button type="submit" value="Submit">Submit</button>
+    </fieldset>
+</form>
+</div>
+{% endblock %}

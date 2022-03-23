@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body, html {
+    overflow: hidden;
+    height: 100%;
+}
+
+header {
+    position: absolute;
+    background-color: #FBB8C4;
+    width: 100%;
+}
+
+header img {
+    height: 30px;
+    position: absolute;
+    margin-left: 72%;
+    margin-top: 10px;
+}
+
+header input[type=text] {
+    float: right;
+    padding: 6px;
+    background-color: #FBD6C1;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+header input[type=text]:focus {
+    background-color: #FFF1E9;
+    outline: none;
+}
+
+header a {
+    float: right;
+    display: block;
+    color: #D52949;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header a:hover, nav ul li a:hover {
+    font-weight: bold;
+    background-color: #FFF1E9;
+    ;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+nav {
+    background: #FBD6C1;
+    width: 225px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 47px;
+}
+
+nav>p {
+    margin-top: 15%;
+    margin-bottom: 30%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D52949;
+    font-family: 'Patrick Hand', cursive;
+}
+
+nav p:last-child {
+    color: #fc5775;
+    font-size: 1rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #D52949;
+    display: block;
+    padding: 13px 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #FBB8C4;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p:nth-child(1) {
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    font-size: 0.75rem;
+}
+
+::placeholder, option, optgroup {
+    color: #D52949;
+}
+
+@media screen and (max-width: 700px) {
+    #mediaHome img{
+            display: none;
+    };
+};
+
+
+@media print {
+    footer {
+            display: none;
+    }
+}
+
+/* ------------------ ACCUEIL ------------------ */
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin-left: 10%;
+}
+
+img {
+    height: 50%;
+}
+
+#container p {
+    margin-left: 25%;
+    text-align: justify;
+    color: #fc5775;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+}
+
+#container p::first-letter {
+    font-size: 3rem;
+}
+
+/* ------------------ Form ------------------ */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    background-color: rgb(251, 184, 196, 0.5);
+    border-radius: 5px;
+}
+
+legend {
+    color: #D52949;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+}
+
+fieldset label {
+    color: #680b1c;
+    margin: 5px;
+}
+
+fieldset input, select {
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF1E9;
+}
+
+fieldset input:focus {
+    outline: none;
+    background-color: rgb(251, 183, 195);
+}
+
+fieldset button {
+    background-color: #D52949;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+    padding: 15px;
+}
+
+fieldset label:nth-child(2)::after, fieldset label:nth-child(4)::after, fieldset label:nth-child(6)::after, label:nth-child(10)::after, fieldset button::after {
+    content: " * ";
+    color: red;
+}
+
+/* ----------------- TABLE ---------------*/
+
+table, th, td {
+    border-bottom: 1px solid rgb(251, 183, 195);
+    border-collapse: collapse;
+    width: 75%;
+}
+
+table th {
+    border-bottom: 2px solid #D52949;
+    background-color: white;
+}
+
+th, td {
+    padding: 25px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-image: linear-gradient(to right, white, white, #FFF1E9);
+}
+
+table img {
+    height: 100px;
+}
+
+table button {
+    width: 100px;
+    text-align: center;
+    background-color: #D52949;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
