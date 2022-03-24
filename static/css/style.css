@@ -84,6 +84,7 @@ nav>p {
 nav p:last-child {
     color: #fc5775;
     font-size: 1rem;
+    margin-top: 450px;
 }
 
 
@@ -146,7 +147,6 @@ footer p:nth-child(2) {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 50%;
     margin-left: 10%;
 }
 
