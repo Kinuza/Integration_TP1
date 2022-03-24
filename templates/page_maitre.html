@@ -14,14 +14,14 @@
   </head>
 
   <body>
-
+    
     <header>
         <a href="#">Share</a>
         <a href="#">Login</a>
       <input type="text" placeholder="Looking for something?">
     </header>
 
-
+    {% block nav %}
     <nav>
       <p>
         SQUISHMALLOWS <br>
@@ -36,7 +36,7 @@
           Collect as many squishy friends as your heart desires!
         </p>
       </nav>
-
+      {% endblock %}
       <main>
       {% block main %}
  
@@ -53,6 +53,5 @@
       </p>
       </p>
     </footer>
-    <script src="js/script.js"></script>
 </html>
 

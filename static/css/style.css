@@ -133,10 +133,12 @@ footer p:nth-child(2) {
     };
 };
 
+/* I don't know why the whole nav isn't visible even when not in print mode, 
+but at least the nav really isn't visible in print. :( :( :(  */
 
 @media print {
-    footer {
-            display: none;
+    #hide {
+            visibility: hidden;
     }
 }
 
