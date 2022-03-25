@@ -2,37 +2,52 @@
 
 {% block titre %} Create an account {% endblock %}
 {% block main %} 
+<nav>
+    <p>
+      SQUISHMALLOWS <br>
+      Squish 'em all!
+    </p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="account">Create an account</a></li>
+        <li><a href="shop">Shop</a></li>
+      </ul>
+      <p>
+        Collect as many squishy friends as your heart desires!
+      </p>
+    </nav>
+
 <div id="container">
-<form action="post" >
+    <form method="post" action="https://philippefleury.com/backend.php">
     <fieldset>
         <legend>
             CREATE AN ACCOUNT
         </legend>
         <label for="firstname">First Name</label>
-        <input type="text" placeholder="First Name" required>
+        <input type="text" name="firstname" class="firstname" placeholder="First Name">
         <label for="lastname">Last Name</label>
-        <input type="text" placeholder="Last Name" required>
+        <input type="text" name="lastname" class="lastname" placeholder="Last Name">
         <label for="email">Email</label>
-        <input type="text" placeholder="Email" id="email" required>
+        <input type="email" name="email" class="email" placeholder="Email" id="email" required>
         <label for="adress">Adress</label>
-        <input type="text" placeholder="Adress">
+        <input type="text" name="adress" placeholder="Adress">
         <label for="country">Country</label>
-        <select id="Country">
-            <optgroup label="Americas">
-                <option value="n_am">North America</option>
-                <option value="c_am">Central America</option>
-                <option value="s_am">South America</option>
-            </optgroup>
-            <optgroup label="Europe">
-                <option value="Germany">Germany</option>
-                <option value="">United Kingdom</option>
-                <option value="">France</option>
-            </optgroup>
-            </select>
-            <label for="phone">Phone Number</label>
-        <input type="text" placeholder="Phone number">
+        <select id="Country" name="country">
+    <optgroup label="Americas">
+        <option value="north america">North America</option>
+        <option value="central america">Central America</option>
+        <option value="south america">South America</option>
+    </optgroup>
+    <optgroup label="Europe">
+        <option value="germany">Germany</option>
+        <option value="united kingdom">United Kingdom</option>
+        <option value="france">France</option>
+    </optgroup>
+    </select>
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" placeholder="Phone number">
         <label for="inst">Delivery instructions</label>
-        <textarea placeholder="Delivery instructions"></textarea>
+        <textarea placeholder="Delivery instructions" name="delivery instructions"></textarea>
         <button type="submit" value="Submit">Submit</button>
     </fieldset>
 </form>

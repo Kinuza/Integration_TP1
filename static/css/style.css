@@ -54,6 +54,7 @@ header a:hover, nav ul li a:hover {
 
 }
 
+
 main {
     display: flex;
     flex-direction: row;
@@ -127,20 +128,6 @@ footer p:nth-child(2) {
     color: #D52949;
 }
 
-@media screen and (max-width: 700px) {
-    #mediaHome img{
-            display: none;
-    };
-};
-
-/* I don't know why the whole nav isn't visible even when not in print mode, 
-but at least the nav really isn't visible in print. :( :( :( :( */
-
-@media print {
-    #hide {
-            visibility: hidden;
-    }
-}
 
 /* ------------------ ACCUEIL ------------------ */
 
@@ -152,23 +139,56 @@ but at least the nav really isn't visible in print. :( :( :( :( */
     margin-left: 10%;
 }
 
-img {
-    height: 50%;
-}
-
 #container p {
-    margin-left: 25%;
     text-align: justify;
     color: #fc5775;
     font-family: 'Patrick Hand', cursive;
     font-size: 1.5rem;
+    margin-left: 10%;
 }
 
 #container p::first-letter {
     font-size: 3rem;
 }
 
+#diapo {
+    width: 600px;
+}
+
+#diapo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    
+}
+
+#next, #prev {
+    background-color: rgb(251, 184, 196, 0.2);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 3rem;
+    color: #D52949;
+}
+
+#next {
+    position: absolute;
+    left: 812px;
+}
+
+#prev {
+    position: absolute;
+    right: 1570px;
+}
 /* ------------------ Form ------------------ */
+
+form input:focus:invalid {
+    border: 5px solid red;
+}
+
+form input:focus:valid {
+    border: 2px solid green;
+}
 
 fieldset {
     display: flex;
@@ -252,4 +272,20 @@ table button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+/*  -------------- HIDDEN --------------  */
+
+
+@media screen and (max-width: 700px) {
+    #mediaHome img {
+            display: none;
+    }
+}
+
+
+@media print {
+    #hidden-nav  {
+            display: none;
+    }
 }

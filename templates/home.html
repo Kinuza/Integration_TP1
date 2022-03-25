@@ -1,11 +1,29 @@
-{% extends 'page_maitre.html' %} 
-
-{% block titre %} Accueil {% endblock %} 
-{% block main %}
+{% extends 'page_maitre.html' %} {% block titre %} Accueil {% endblock %} {%block main %}
+<nav>
+  <p>
+    SQUISHMALLOWS <br>
+    Squish 'em all!
+  </p>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="account">Create an account</a></li>
+      <li><a href="shop">Shop</a></li>
+    </ul>
+    <p>
+      Collect as many squishy friends as your heart desires!
+    </p>
+  </nav>
 <div id="mediaHome">
-<div id="container">
-    <img src="static/img/moo.jpg" alt="image">
-    <p>Don't worry about investing your whole paycheck into Squishmallows. It's not weird at all. No, really, it's fine.</p>
-</div>
+  <div id="container">
+    <button class="button" id="prev"><</button>
+    <div id="diapo">
+      <img src="static/img/0.jpg" alt="image" id="image" />
+    </div>
+      <button class="button" id="next">></button>
+    <p>
+      Don't worry about investing your whole paycheck into Squishmallows. It's
+      not weird at all. No, really, it's fine.
+    </p>
+  </div>
 </div>
 {% endblock %}

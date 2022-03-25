@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<script src="../static/js/script.js" defer></script>
     <title>{% block titre %}{% endblock %} - Squishmallows</title>
 
   </head>
@@ -18,29 +19,12 @@
     <header>
         <a href="#">Share</a>
         <a href="#">Login</a>
-      <input type="text" placeholder="Looking for something?">
+      <input type="text" placeholder="Looking for something? 🔎︎">
     </header>
 
-    {% block nav %}
-    <nav>
-      <p>
-        SQUISHMALLOWS <br>
-        Squish 'em all!
-      </p>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="account">Create an account</a></li>
-          <li><a href="shop">Shop</a></li>
-        </ul>
-        <p>
-          Collect as many squishy friends as your heart desires!
-        </p>
-      </nav>
-      {% endblock %}
+
       <main>
       {% block main %}
- 
-
 
      
       {% endblock %}
@@ -53,5 +37,15 @@
       </p>
       </p>
     </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL5HVCZ2L2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FL5HVCZ2L2');
+</script>
+</body>
 </html>
 
